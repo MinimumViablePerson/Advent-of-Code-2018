@@ -1,7 +1,7 @@
 import { parseClaim } from './helpers.js'
 
 export default {
-  baseURL: 'https://github.com/MinimumViablePerson/Advent-of-Code-2018/tree/master/data',
+  baseURL: 'https://raw.githubusercontent.com/MinimumViablePerson/Advent-of-Code-2018/master/data',
   getDay1Data () {
     return this.get(this.baseURL + '/day-1.txt')
       .then(arr => arr.map(n => parseInt(n)))
