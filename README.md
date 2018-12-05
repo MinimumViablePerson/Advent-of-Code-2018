@@ -6,3 +6,4 @@
 | [Day 2](./solutions/day-2/) | [⭐: 3](./solutions/day-2/3.js) | [⭐: 4](./solutions/day-2/4.js) |
 | [Day 3](./solutions/day-3/) | [⭐: 5](./solutions/day-3/5.js) | [⭐: 6](./solutions/day-3/6.js) |
 | [Day 4](./solutions/day-4/) | [⭐: 7](./solutions/day-4/7.js) | [⭐: 8](./solutions/day-4/8.js) |
+| [Day 5](./solutions/day-5/) | [⭐: 7](./solutions/day-5/9.js) | [⭐: 8](./solutions/day-5/10.js) |
