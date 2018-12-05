@@ -7,6 +7,8 @@ import solveProblem5 from './solutions/day-3/5.js'
 import solveProblem6 from './solutions/day-3/6.js'
 import solveProblem7 from './solutions/day-4/7.js'
 import solveProblem8 from './solutions/day-4/8.js'
+import solveProblem9 from './solutions/day-5/9.js'
+import solveProblem10 from './solutions/day-5/10.js'
 
 (async () => {
   const frequencies = await API.getDay1Data()
@@ -24,4 +26,8 @@ import solveProblem8 from './solutions/day-4/8.js'
   const logs = await API.getDay4Data().then(data => data.sort())
   console.log('⭐7: ', solveProblem7(logs))
   console.log('⭐8: ', solveProblem8(logs))
+
+  const polymer = await API.getDay5Data()
+  console.log('⭐9: ', solveProblem9(polymer))
+  console.log('⭐10: ', solveProblem10(polymer))
 })()

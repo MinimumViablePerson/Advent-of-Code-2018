@@ -1,7 +1,8 @@
 import { parseClaim } from './helpers.js'
 
+const githubRepoURL = 'https://raw.githubusercontent.com/MinimumViablePerson/Advent-of-Code-2018/master'
+
 export default {
-  // baseURL: 'https://raw.githubusercontent.com/MinimumViablePerson/Advent-of-Code-2018/master/data',
   baseURL: '/data',
   getDay1Data () {
     return this.get(this.baseURL + '/day-1.txt')
@@ -16,6 +17,12 @@ export default {
   },
   getDay4Data () {
     return this.get(this.baseURL + '/day-4.txt')
+      .then(data => data.sort())
+  },
+  getDay5Data () {
+    return fetch(this.baseURL + '/day-5.txt')
+      .then(resp => resp.text())
+      .then(text => text.trimEnd())
   },
   get (url) {
     return fetch(url)
